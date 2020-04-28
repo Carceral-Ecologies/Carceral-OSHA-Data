@@ -10,11 +10,11 @@ library(tidyr)
 library(stringr)
 
 #### Load in OSHA Inspection Datasets ####
-osha1 = read.csv("Data/osha_inspection0.csv", header = TRUE, sep = ",")
-osha2 = read.csv("Data/osha_inspection1.csv", header = TRUE, sep = ",")
-osha3 = read.csv("Data/osha_inspection2.csv", header = TRUE, sep = ",")
-osha4 = read.csv("Data/osha_inspection3.csv", header = TRUE, sep = ",")
-osha5 = read.csv("Data/osha_inspection4.csv", header = TRUE, sep = ",")
+osha1 = read.csv("Raw_Data/osha_inspection0.csv", header = TRUE, sep = ",")
+osha2 = read.csv("Raw_Data/osha_inspection1.csv", header = TRUE, sep = ",")
+osha3 = read.csv("Raw_Data/osha_inspection2.csv", header = TRUE, sep = ",")
+osha4 = read.csv("Raw_Data/osha_inspection3.csv", header = TRUE, sep = ",")
+osha5 = read.csv("Raw_Data/osha_inspection4.csv", header = TRUE, sep = ",")
 
 # merge datasets
 oshac = rbind(osha1, osha2, osha3, osha4, osha5)
@@ -81,8 +81,10 @@ newprisons2 <- newprisons %>% filter(year > 2009 | is.na(year == TRUE))
 # 2. 313762569
 # 3. 315010157
 # 4. 315605832
+# 5. 315736637 - contractor who builds jails
+# 6. 313787681 - electrical contractor
 
-newprisons3 = newprisons2 %>% filter(activity_nr !=  314765041) %>% filter(activity_nr != 313762569) %>% filter(activity_nr != 315010157) %>% filter(activity_nr != 315605832)
+newprisons3 = newprisons2 %>% filter(activity_nr !=  314765041) %>% filter(activity_nr != 313762569) %>% filter(activity_nr != 315010157) %>% filter(activity_nr != 315605832) %>% filter(activity_nr != 315736637) %>% filter(activity_nr !=  313787681)
 
 
 #### 3. Combine Part1 and Part2 Datasets and Save ####
