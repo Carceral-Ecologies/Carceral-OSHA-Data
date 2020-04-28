@@ -1,11 +1,11 @@
 #### Purpose ####
-# The purpose of this code is to take activity_nr numbers from the OSHA inspections dataset and locate them in the violations dataset. 
+# The purpose of this code is to take activity_nr numbers from the OSHA inspections dataset and locate them in the violations dataset. The code creates a new dataset of violations.  
 
 inspections = read.csv("prison_inspections_2010.csv")
 
 
 #### Load in OSHA Inspection Datasets ####
-vfiles = list.files("Data/Violations", full.names = TRUE)
+vfiles = list.files("Raw_Data/Violations", full.names = TRUE)
 violations = lapply(vfiles, read.csv, header = TRUE, stringsAsFactors = FALSE)
 violations_df = do.call(rbind, violations)
 
