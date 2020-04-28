@@ -41,8 +41,11 @@ For any questions on decorum please see our [Code of Conduct](https://github.com
 <!-- ALL-CONTRIBUTORS-LIST:START -->
 | Contributions | Name |
 | ----: | :---- |
+| [🔢](# "Content") [📋](# "Organizer") [🤔](# "Ideas and Planning") | Savannah Hunter |
 | [🔢](# "Content") [📋](# "Organizer") [🤔](# "Ideas and Planning") | Lindsay Poirier |
 | [🔢](# "Content") [📋](# "Organizer") [🤔](# "Ideas and Planning") | Nick Shapiro |
+
+savannahmhunter
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
