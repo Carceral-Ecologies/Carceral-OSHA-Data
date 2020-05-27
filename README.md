@@ -33,6 +33,13 @@ It is the third compenent that has likley led you here. We are managing our work
   * Clearly state the purpose of your change in the description field for each commit.
   * After your first pull request is approved, please add yourself to the contributors list in the README as is appropriate.
 
+## Organization of files
+Each script represents a stage in the data cleaning and analysis process. This section details the order in which to run them. The OSHA_Data.Rproj is the project file.
+  * First, run OSHA_merge_isolate.R to compile inspection information.
+  * Second, run OSHA_violations.R to compile violation information.
+  * Third, run OSHA_merge_inspec_viol.R to merge the inspection and violation datasets.
+  * Fourth, run the prison_insp_viol_2010_cleaning_open_refine.txt in Openrefine to clean column names in the combined dataset.
+
 ## Code of Conduct
 
 For any questions on decorum please see our [Code of Conduct](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/blob/master/Code%20of%20Conduct.md).
