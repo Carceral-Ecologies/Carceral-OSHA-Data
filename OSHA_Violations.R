@@ -1,7 +1,7 @@
 #### Purpose ####
 # The purpose of this code is to take activity_nr numbers from the OSHA inspections dataset and locate them in the violations dataset. The code creates a new dataset of violations.  
 
-inspections = read.csv("prison_inspections_2010.csv")
+inspections = read.csv("Cleaned_Data/prison_inspections_2010.csv")
 
 
 #### Load in OSHA Inspection Datasets ####
@@ -14,7 +14,7 @@ prison_violations = violations_df[violations_df$activity_nr %in% activity_nr_cha
 
 # Checking if any prisons are not in the violations_df
 no_viol = inspections[!(inspections$activity_nr %in% violations_df$activity_nr), "activity_nr"]
-#809 prisons with no violations 
+#1382 prisons with no violations 
 
 # save 
-write.csv(prison_violations, file = "prison_violations_2010.csv")
+write.csv(prison_violations, file = "Cleaned_Data/prison_violations_2010.csv")
