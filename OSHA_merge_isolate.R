@@ -1,5 +1,5 @@
 #### PURPOSE  ####
-# The purpose of this code is to merge the OSHA inspection datasets into one dataframe. And then isolate all of the prison facilities using SIC/NAICS code and logic. 
+# The purpose of this code is to merge the all the OSHA inspection datasets into one dataframe. And then isolate all of the prison facilities using SIC/NAICS code and logic. 
 
 
 library(lubridate)
@@ -19,18 +19,20 @@ osha5 = read.csv("Raw_Data/osha_inspection4.csv", header = TRUE, sep = ",")
 # merge datasets
 oshac = rbind(osha1, osha2, osha3, osha4, osha5)
 
-#### 1. Isolate Prisons using sic code ####
-prisonsic = oshac[oshac$sic_code == 9223 & !is.na(oshac$sic_code), ]
-prisonsnaics = prisonsic[with(prisonsic,"naics_code" == 922140 & "sic_code" != 9223), ] # None labeled 922140 that are not labeled 9223
+#### 1. Isolate Prisons using sic code and NAICS Code ####
+
+prisons = oshac[((oshac$sic_code == 9223 & !is.na(oshac$sic_code)) | (oshac$naics_code == 922140) & !is.na(oshac$naics_code)), ]
+# testing with tidyverse to make sure the rows returned are the same
+prisonst <-oshac %>% filter(sic_code == 9223 | naics_code == 922140)
 
 # reformating the close dates
-prisonsic$close_case_date = ymd(prisonsic$close_case_date)
-prisonsic$year = year(prisonsic$close_case_date)
-table(prisonsic$year)
+prisons$close_case_date = ymd(prisons$close_case_date)
+prisons$year = year(prisons$close_case_date)
+table(prisons$year)
 
 # Filter prisons identified by sic code to only inspections with close dates no later than 2009
-table(is.na(prisonsic$year))
-prisonsic2010 = prisonsic[prisonsic$year > 2009 | is.na(prisonsic$year == TRUE), ]
+table(is.na(prisons$year))
+prisons2010 = prisons[prisons$year > 2009 | is.na(prisons$year == TRUE), ]
 
 
 #### 2. Find any prisons not coded correctly using logics ####
@@ -79,19 +81,17 @@ newprisons2 <- newprisons %>% filter(year > 2009 | is.na(year == TRUE))
 # Drop four facilities which are not actually prisons 
 # 1. 314765041
 # 2. 313762569
-# 3. 315010157
-# 4. 315605832
-# 5. 315736637 - contractor who builds jails
-# 6. 313787681 - electrical contractor
+# 3. 315736637 - contractor who builds jails
+# 4. 313787681 - electrical contractor
 
-newprisons3 = newprisons2 %>% filter(activity_nr !=  314765041) %>% filter(activity_nr != 313762569) %>% filter(activity_nr != 315010157) %>% filter(activity_nr != 315605832) %>% filter(activity_nr != 315736637) %>% filter(activity_nr !=  313787681)
+newprisons3 = newprisons2 %>% filter(activity_nr !=  314765041) %>% filter(activity_nr != 313762569) %>% filter(activity_nr != 315736637) %>% filter(activity_nr !=  313787681)
 
 
 #### 3. Combine Part1 and Part2 Datasets and Save ####
 # combine prison2010 and newprisons2
 newprisons4 = select(newprisons3, -correction, -prison, -jail, -pen, -det, -day, -camp, -lock, -wom, -jus, -con, -ref, -farm)
 
-newprisons5 = full_join(prisonsic2010, newprisons4)
+newprisons5 = full_join(prisons2010, newprisons4)
 
 # save 
  write.csv(newprisons5, file = "prison_inspections_2010.csv")
