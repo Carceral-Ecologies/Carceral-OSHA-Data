@@ -9,10 +9,10 @@ library("plotly")
 
 #### Read in Data ####
 
-viol = read.csv(file = "Cleaned_Data/prison_insp_viol_2010.csv", header = TRUE, stringsAsFactors = FALSE)
+viol = read.csv(file = "Cleaned_Data/prison_insp_viol_2010_op.csv", header = TRUE, stringsAsFactors = FALSE)
 
 #### Convert from wide to long ####
-  # creating count of violations for each activity number
+  # creating count of violations for each activity number in order to reshape the data
 
 violt = do.call(rbind, by(viol, viol$activity_nr, FUN = function(acn){
   acn$viol_count = 1:nrow(acn)
@@ -117,8 +117,8 @@ violt = do.call(rbind, by(viol, viol$activity_nr, FUN = function(acn){
 #### 2. Current Penalty ####
   #### 2a How many rows (citations) have no penalty attached? ####
   table(is.na(viol$current_penalty))
-  # 3052 have no penalty information
-  # 2042 have a penalty
+  # 3052 have no current penalty information
+  # 2042 have a current penalty
   
   table(is.na(viol$initial_penalty))
   # 2251 have an initial penalty 
@@ -146,11 +146,11 @@ violt = do.call(rbind, by(viol, viol$activity_nr, FUN = function(acn){
     breaks =  c(-1, 500, 1000, 10000, 30000)
     bp = cut(viol$current_penalty, breaks, labels = c("0-500", "500-1000", "1000-10000", ">10000"))
     summary(bp)
-    barplot(table(bp), ylim = c(0, 726), title(main = "Current Penalty"))
+    barplot(table(bp), ylim = c(0, 726), title(main = "Current Penalty")) # error in code here bc some NA's
   
-  #### 2c What is the distribution of penalties for each activity? ####
+  #### 2c What is the distribution of penalties for each activity? Long Format ####
     
-  ## What is the total penalty for each activity? (NA's Removed)
+  ## What is the total penalty for each activity (long format)? (NA's Removed)
   violc = do.call(rbind, by(viol, viol$activity_nr, FUN = function(acn){
     acn$cptotal = sum(acn$current_penalty, na.rm = TRUE)
     return(acn)
@@ -228,22 +228,22 @@ violt = do.call(rbind, by(viol, viol$activity_nr, FUN = function(acn){
   fig_it
   
   
-  #### 2e Subset only those with penalties (drop zeros) ####
+#### 2e Subset only those with penalties (drop zeros) ####
   table(as.logical(violw$init_rowsums >0.0))
-    # 374 have no initial penalty
-    # 350 have an initial penalty or 14.6%
+    
   table(as.logical(violw$curr_rowsums >0.0))
-  # 423 have no current penalty
-  # 301 have a current penalty or 12.5%
-  # so 49 violations had an initial penalty but later this was removed. 
   
-  violw_no_init = violw[violw$init_rowsums > 0, ]
-  violw_no_curr = violw[violw$curr_rowsums > 0, ]
+# creates dataset for facilities that only have some initial penalty listed
+  violw_no_init = violw[violw$init_rowsums > 0, ] 
+  
+  # creates visualization of initial penalty amount for facilties that had a penalty
   hist(violw_no_init$init_rowsums, freq = TRUE, breaks = 25)
   plot_ly(violw_no_init, x = ~init_rowsums, type = "histogram", histnorm = "percent", nbinsx = 75)
 
- 
+# creates dataset for facilities that only have some current penalty listed
+  violw_no_curr = violw[violw$curr_rowsums > 0, ]
   
+
   fig_c <- violw_no_curr %>%
     plot_ly(
       y = ~curr_rowsums,
