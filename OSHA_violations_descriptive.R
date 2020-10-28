@@ -11,6 +11,7 @@ library("plotly")
 
 viol = read.csv(file = "Cleaned_Data/prison_insp_viol_2010_op.csv", header = TRUE, stringsAsFactors = FALSE)
 
+
 #### Convert from wide to long ####
   # creating count of violations for each activity number in order to reshape the data
 
