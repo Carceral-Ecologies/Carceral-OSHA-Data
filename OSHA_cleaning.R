@@ -24,6 +24,7 @@ ca_viol$estab_name = gsub("DEPTT", "DEPT", ca_viol$estab_name)
 ca_viol$estab_name = gsub("REHABILITATION", "REHAB", ca_viol$estab_name)
 ca_viol$estab_name = gsub("FORT", "FT", ca_viol$estab_name)
 ca_viol$estab_name = gsub("\\s?  \\s?", " ", ca_viol$estab_name)
+ca_viol$estab_name = gsub("SHERIFF ", "SHERIFFS", ca_viol$estab_name)
 trimws(ca_viol$estab_name, which = c("both"))
 
 #### Cleaning addresses ####
@@ -50,7 +51,8 @@ ca_viol$site_address = gsub("\\s?  \\s?", " ", ca_viol$site_address)
 trimws(ca_viol$site_address, which = c("both"))
 
 #### Export Long Data ####
-write.csv(ca_viol, 'CA_prison_insp_viol_2010_op_fac.csv')
+# If you feel like it. Not fully cleaned yet. This is here as a record that we did export this data for some preliminary analysis.
+# write.csv(ca_viol, 'Cleaned_Data/CA_prison_insp_viol_2010_op_fac.csv')
 
 #### Convert to Wide Format by Facility Name ####
 
@@ -72,12 +74,14 @@ ca_violw = reshape(ca_violk, idvar = "estab_name", timevar = "estab_count", dire
 row.names(ca_violw) <- 1:nrow(ca_violw)
 
 #### Export Wide Data ####
+# Exporting the data in wide format is needed to do the cleaning in the next step. Remove the # below to export the wide data pre-cleaning. There is also code below to export the wide data post-cleaning.
 
-write.csv(ca_violw, file = "Cleaned_data/CA_prison_insp_viol_2010_op_fac_wide.csv", row.names = FALSE)
+# write.csv(ca_violw, file = "Cleaned_data/CA_prison_insp_viol_2010_op_fac_wide.csv", row.names = FALSE)
 
 #### Manual Cleaning of Facility Names ####
 # After converting the data to wide format I found the following corrections needed to be made. 
 # Method: I looked through the wide dataset. Sorted by zipcode. Then compared facility names with identical zipcodes and addresses. If they appeared to be similar but had slightly different names I renamed facilities to the titles that appeared in the HIFLD data. See the wiki for more information: https://github.com/Carceral-Ecologies/Caceral-OSHA-Data/wiki/Data-Quality
+# These changes are made to the long dataset. 
 
 
 ca_viol[which(ca_viol$activity_nr %in% c("312663560", "312664980", "312667173", "307189183")), "estab_name"] = "SOUTHERN YOUTH CORR RECEPTION CENTER / CLINIC"
@@ -165,30 +169,56 @@ ca_viol[which(ca_viol$activity_nr %in% c(316698869, 314992686, 341285310, 342072
 
 ca_viol[which(ca_viol$activity_nr %in% c(314568577, 314532458)), "estab_name"] = "PELICAN BAY STATE PRISON (PBSP)"
 
+ca_viol[which(ca_viol$activity_nr %in% c(313234593, 314532474, 340146349)), "estab_name"] = "Richard A. McGee Correctional Training Center (CTC)"
+
+ca_viol[which(ca_viol$activity_nr %in% c(312577562, 314995606, 314995614, 340475557, 341489698, 344074737, 312575830, 316700814)), "estab_name"] = "MULE CREEK STATE PRISON (MCSP)"
+
+ca_viol[which(ca_viol$activity_nr %in% c(125826677, 341685345, 342039666, 316519974)), "estab_name"] = "CALIFORNIA STATE PRISON, SACRAMENTO (SAC)"
+
+ca_viol[which(ca_viol$activity_nr %in% c(313230005, 314536319, 314536301, 314568627, 317248680, 314536459, 316521392)), "estab_name"] = "FOLSOM STATE PRISON (FSP)"
+
+ca_viol[which(ca_viol$activity_nr %in% c(311075717, 314323700, 314327545, 316818491, 341314698, 316821024, 314329236, 314328444, 314328451, 314332222, 314331398, 316816511, 316819937, 316821362)), "estab_name"] = "CALIFORNIA STATE PRISON, SOLANO (SOL)"
+
+ca_viol[which(ca_viol$activity_nr %in% c(314337882, 314323965, 311074942, 316818509, 316819713, 316820398, 316821438, 314338039, 314332230, 316817071, 316818046, 316817345, 341257186, 316818764, 316819721, 316820802, 341534634)), "estab_name"] = "CALIFORNIA MEDICAL FACILITY (CMF)"
+
+ca_viol[which(ca_viol$activity_nr %in% c(125827618, 125826990)), "estab_name"] = "DEVIL'S GARDEN CONSERVATION CAMP #40"
+
+ca_viol[which(ca_viol$activity_nr %in% c(340955665, 313235210, 341586592, 125826107, 341550101)), "estab_name"] = "HIGH DESERT STATE PRISON (HDSP)"
+
+#### Convert new cleaned facility names to wide format ####
+
+# reshape by facility name
+# format OSHA violations data to the facility level
+# creating count of establishments in order to reshape the data
+
+ca_violc = do.call(rbind, by(ca_viol, ca_viol$estab_name, FUN = function(estab){
+  estab$estab_count = 1:nrow(estab)
+  return(estab)
+}))
+
+# reshape by facility name
+
+keepcolumns <- c("activity_nr", "estab_name", "estab_count", "site_address", "site_city", "site_zip")
+ca_violk = ca_violc[keepcolumns]
+
+ca_violw = reshape(ca_violk, idvar = "estab_name", timevar = "estab_count", direction = "wide")
+
+row.names(ca_violw) <- 1:nrow(ca_violw)
+
+# we went from 297 rows to 147 facilities! 
+
+#### Export Wide Data ####
+# Exporting the data in wide format is needed to do the cleaning in the next step.
+
+write.csv(ca_violw, file = "Cleaned_data/CA_prison_insp_viol_2010_op_fac_wide.csv", row.names = FALSE)
 
 
-# rename 313234593 314532474 340146349 to Richard A. McGee Correctional Training Center (CTC)
+#### Adding name of city to end certain facilities ####
+# There are several facilities with simple names like "CA CORRECTIONS" that have multiple cities attached to the name. I deal with this by simplying them to the same name and then adding the name of the city to the end of the name. 
 
-# rename 312577562 314995606 314995614 340475557 341489698 344074737 312575830 316700814 to MULE CREEK STATE PRISON (MCSP)
+ca_viol[which(ca_viol$estab_name %in% c("CA CORRECTION AND REHAB CENTER CA REHAB CENTER CRC", "CA DEPT CORRECTIONS AND REHAB", "312667173", "307189183")), "estab_name"] = ""
 
-# rename 125826677 341685345 342039666 316519974 to CALIFORNIA STATE PRISON, SACRAMENTO (SAC)
-
-# rename to FOLSOM STATE PRISON (FSP) 313230005 314536319 314536301 314568627 317248680 314536459 316521392
-
-# rename 311075717 314323700 314327545 316818491 341314698 316821024 314329236 314328444 314328451 314332222 314331398 316816511 316819937 316821362 to CALIFORNIA STATE PRISON, SOLANO (SOL)
-
-# rename 314337882 314323965 311074942 316818509 316819713 316820398 316821438 314338039 314332230 316817071 316818046 316817345 341257186 316818764 316819721 316820802 341534634 to CALIFORNIA MEDICAL FACILITY (CMF)
-
-# rename 125827618 125826990 to DEVIL'S GARDEN CONSERVATION CAMP #40
-
-# rename 340955665 313235210 341586592 125826107 341550101 to HIGH DESERT STATE PRISON (HDSP)
-
-#Add to above code "SHERIFF" to "SHERIFFS" 
-
-
-#### Adding name of city to end of facility names ####
-# This will deal with similar names but in different cities but I should only do this for ones like Prison Industry Authority, CA Dept of Corrections, CA PRISON INDUSTRY AUTHORITY, CA DEPT OF CORRECTIONS AND REHAB
-
+# find the rows that the name city combo is not unique and then "paste" to c the name and replace with the new name. 
 
 
 #### Manual Cleaning of Addresses ####
