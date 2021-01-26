@@ -138,7 +138,7 @@ ca_viol[which(ca_viol$activity_nr %in% c(316672393, 316668573, 316671932, 342452
 
 ca_viol[which(ca_viol$activity_nr %in% c(316720499, 300804663, 120146022, 341377265, 316725159, 344439153, 316723220, 300804663, 312915911, 341377265, 316725365, 344309661, 341128007, 315068387, 315070367, 315073551, 301124681, 310822689, 315073569, 315075218, 316723121, 316727247, 341520252, 341534782, 341835296, 342064854, 344217237, 310825237, 310825245, 316726223, 340449347)), "estab_name"] = "AVENAL STATE PRISON"
 
-ca_viol[which(ca_viol$activity_nr %in% c(315072751, 316724319, 343678652, 342176336, 343068243, 344005046)), "estab_name"] = "PLEASANT VALLEY STATE PRISON (PVSP)"
+ca_viol[which(ca_viol$activity_nr %in% c(315072751, 316724319, 343678652, 342176336, 343068243, 344005046, 342116266)), "estab_name"] = "PLEASANT VALLEY STATE PRISON (PVSP)"
 
 ca_viol[which(ca_viol$activity_nr %in% c(316727668 )), "estab_name"] = "DEPARTMENT OF STATE HOSPITALS - COALINGA"
 
@@ -181,7 +181,7 @@ ca_viol[which(ca_viol$activity_nr %in% c(335612602, 335245585, 335655007, 340642
 
 ca_viol[which(ca_viol$activity_nr %in% c(335646626, 337062467, 337162986)), "estab_name"] = "FCI DUBLIN CAMP"
 
-ca_viol[which(ca_viol$activity_nr %in% c(300751252, 342709201, 315830984, 300752367, 125475228, 125531889, 125479139, 125475350, 125540302, 300750007, 125540468, 125540526)), "estab_name"] = "SAN QUENTIN STATE PRISON (SQ)"
+ca_viol[which(ca_viol$activity_nr %in% c(300751252, 342709201, 315830984, 300752367, 125475228, 125531889, 125479139, 125475350, 125540302, 300750007, 125540468, 125540526, 340921402, 341153112)), "estab_name"] = "SAN QUENTIN STATE PRISON (SQ)"
 
 ca_viol[which(ca_viol$activity_nr %in% c(314146531, 341805232)), "estab_name"] = "ELMWOOD CORRECTIONAL COMPLEX"
 
@@ -254,7 +254,7 @@ row.names(ca_violw) <- 1:nrow(ca_violw)
 
 
 #### Export Wide Data ####
-# Exporting the data in wide format is needed to do the cleaning in the next step.
+# Exporting the data in wide format to verify cleaning
 
 write.csv(ca_violw, file = "Cleaned_data/CA_prison_insp_viol_2010_op_fac_wide.csv", row.names = FALSE)
 
