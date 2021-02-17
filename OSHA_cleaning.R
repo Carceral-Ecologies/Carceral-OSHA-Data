@@ -258,6 +258,10 @@ row.names(ca_violw) <- 1:nrow(ca_violw)
 
 write.csv(ca_violw, file = "Cleaned_data/CA_prison_insp_viol_2010_op_fac_wide.csv", row.names = FALSE)
 
+#### Export Long Data ####
+
+write.csv(ca_viol, file = "Cleaned_data/CA_OSHA_prison_insp_viol_2010_2019_cleaned_long.csv", row.names = FALSE)
+
 
 
 #### Manual Cleaning of Addresses ####
