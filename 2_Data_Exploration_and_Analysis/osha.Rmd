@@ -1,0 +1,139 @@
+---
+title: "osha"
+author: "Selam Berekat"
+date: "1/26/2021"
+output: html_document
+---
+
+# Load packages
+```{r, echo = FALSE}
+library(lubridate)
+library(tidyverse)
+library(tidyr)
+library(dplyr)
+library(ggplot2)
+library(knitr)
+library(questionr)
+```
+
+# Load dataset
+```{r, echo = FALSE}
+osha <- 
+  read.csv("CA_OSHA_prison_insp_viol_2010_2019_cleaned_long.csv") %>% 
+  filter(!is.na(nr_exposed) & !is.na(year) & !is.na(sic_code)) 
+
+#Histogram
+ggplot(osha, aes(x = nr_exposed, fill = as.factor(sic_code))) + geom_histogram(binwidth = 10, position="identity") + ggtitle("Distribution of Hazard Exposed Employees by", subtitle = "Type of Standard Industrial Classification") + theme_classic(base_size = 10) + scale_fill_brewer(palette = "Paired")
+
+#Boxplot
+ggplot(osha, aes(y = nr_exposed, x = as.factor(sic_code))) + geom_boxplot() + ylab("Miles per Gallon") + xlab("Standard Industrial Classification") + ggtitle("Distribution of Employee Hazard Exposure by", subtitle = "Facility Standard Industrial Classification Code")  
+```
+
+
+# Data exploration 
+
+Organize the year in dataset according to open date of case for exposed employees.
+
+```{r fig.height=6, fig.width=6, echo = FALSE}
+# sort(unique(osha$nr_exposed))
+# sort(unique(osha$sic_code))
+
+# reformating the open dates
+osha$open_date = ymd(osha$open_date)
+osha$year = year(osha$open_date)
+
+#test
+table(osha$year)
+```
+
+Convert numeric (nr_exposed) to categorical (expose) variables. 
+For the purpose to classify the number of employees by parts.
+
+```{r fig.height=10, fig.width=10, echo = FALSE}
+#recode nr_exposed
+osha$expose = cut(osha$nr_exposed, 
+                        c(-1, 500, 1000, 2000, 3000),
+                        dig.lab = 5) # stops scientific notation
+
+osha$expose = factor(osha$expose,
+                        labels = c("Less than 500", "500 - 1000", "1000 - 2000", "Above 2000"),
+                        exclude = NA)
+
+#test our new column is correct
+two.way1 = table(osha$expose, osha$nr_exposed)
+
+#Plot the unfaceted table
+two.way2 = table(osha$sic_code, osha$expose)
+barplot(two.way2, beside = TRUE, legend.text =  rownames(two.way2), main = "Distribution of Employee Hazard Exposure by Facility Standard Industrial Classification Code")
+```
+
+# Facet by Year
+
+```{r fig.height=10, fig.width=10, echo = FALSE}
+ggplot(osha, aes(x = expose, fill = sic_code)) + 
+  geom_bar(position = "dodge") +
+  facet_grid(rows = vars(year)) +
+  scale_y_continuous(labels = scales::comma) +
+  coord_flip() + theme_minimal(base_size = 15) +
+  labs(x = "Number of Exposed Employees", y = "Standard Industrial Classification Code", 
+       title = "Distribution of Employee Hazard Exposure by", subtitle = "Facility Standard Industrial Classification Code by year 2010-2019")
+```
+
+
+# Facet by Year and Region
+
+```{r, echo = FALSE}
+sort(unique(osha$site_city))
+```
+
+```{r, echo = FALSE}
+regions <- read.csv("/Users/ksalamawit/Desktop/Book.csv")
+regions <- 
+  regions %>%
+  mutate(site_city = str_trim(site_city))
+
+osha_joined <-
+osha %>% 
+  left_join(regions, by = "site_city")
+```
+
+
+```{r, echo = FALSE}
+osha_joined %>% filter(year %in% 2010:2014) %>%
+  ggplot(aes(x = expose, fill = region)) +
+  geom_bar() + facet_grid(rows = vars(year)) +
+  scale_y_continuous(labels = scales::comma) +
+  coord_flip() + theme_minimal(base_size = 15) +
+  labs(x = "Number of Exposed Employees", y = "Standard Industrial Classification Code", 
+        title = "Distribution of Employee Hazard Exposure by Facility Standard Industrial Classification Code",
+       subtitle = "Faceted by Year, 2000-2019") 
+```
+
+```{r fig.height=10, fig.width=10, echo = FALSE}
+osha_joined %>% 
+  filter(year %in% 2000:2010) %>%
+  ggplot(aes(x = nr_exposed, fill = region)) +
+  geom_histogram(binwidth = 500) + 
+  facet_grid(rows = vars(year)) + 
+  scale_y_continuous(labels = scales::comma) +
+  #coord_flip() + 
+  theme_minimal(base_size = 15) +
+  labs(x = "Number of Exposed Employees", y = "Facilities", 
+       title = "Distribution of Employee Hazard Exposure by Facility Standard Industrial Classification Code",
+       subtitle = "Faceted by Year, 2000-2010") 
+```
+
+```{r fig.height=6, fig.width=10, echo = FALSE}
+osha_joined %>%
+  group_by(region, year) %>%
+  summarize(total_nr_exposed = sum(nr_exposed)) %>%
+  ggplot(aes(x = year, y = total_nr_exposed, fill = region)) +
+  geom_col()
+
+#not correct - I don't know why
+osha_joined %>%
+  ggplot(aes(x = year, y = nr_exposed, fill = region)) +
+  stat_summary(geom = "col", fun = "sum")
+```
+
+
