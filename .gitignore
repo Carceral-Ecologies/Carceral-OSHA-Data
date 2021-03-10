@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+Cleaned_Data/
+Raw_Data/
+
+*.csv
+*.xlsx
+*.xls

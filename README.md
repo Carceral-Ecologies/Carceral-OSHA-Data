@@ -8,10 +8,10 @@ Incarcerated people are on the frontlines of environmental injustice. This syste
 
 This project has three main arms:
 1. Envrionmental monitoring
-2. Itterative study design with stakeholders
+2. Iterative study design with stakeholders
 3. Data analysis of datasets that may cast light on the environmental conditions of prisons, jail, and detention centers. 
 
-It is the third compenent that has likley led you here. We are managing our work flow through the [issues](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/issues) function. Thats probably the best place to start contributing. 
+It is the third compenent that has likely led you here. We are managing our work flow through the [issues](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/issues) function. Thats probably the best place to start contributing. 
 
 ## How to Contribute
 
@@ -35,10 +35,22 @@ It is the third compenent that has likley led you here. We are managing our work
 
 ## Organization of files
 Each script represents a stage in the data cleaning and analysis process. This section details the order in which to run them. The OSHA_Data.Rproj is the project file.
-  * First, run OSHA_merge_isolate.R to compile inspection information.
-  * Second, run OSHA_violations.R to compile violation information.
-  * Third, run OSHA_merge_inspec_viol.R to merge the inspection and violation datasets.
-  * Fourth, run the prison_insp_viol_2010_cleaning_open_refine.txt in Openrefine to clean column names in the combined dataset.
+
+The files are organized into two main folders. 
+  * First, the 1_Data_Creation_Cleaning folder contains files used to create the final dataset.
+  * Second, the 2_Data_Exploration_and_Analyis folder contains files for data analysis.
+
+Within the 1_Data_Creation_Cleaning folder there are two additional folders Cleaned_Data and Raw_Data. The Raw_Data are converted to Cleaned_Data using the numbered rscripts in this folder. Here is order in which to run the files and brief explanation of what each file does. 
+  * First, 1_OSHA_inspections loads in the OSHA inspection datasets and filters the data to include only prisons using NAICS codes, SIC codes, and establishment name information.
+  * Second, 2_OSHA_violations loads in the violations data and then filters that data to only include prisons identified in the 1_OSHA_inspections script. 
+  * Third, 3_OSHA_related_activity does the same as step 2 but for the OSHA related activity data.
+  * Fourth, 4_OSHA_violation_event does the same as step 2 but for the violation event data.
+  * Fifth, 5_OSHA_merge_datasets merges the OSHA inspection, violations, related activity, and violation event data into one dataset. 
+  * Sixth, 6_open_refine_JSON_cleaning_code is a text document that contains JSON code designed to be run in OpenRefine to clean the city, address, and establishment name information in the final dataset. While OpenRefine is very helpful ultimately this step could not accomplish the level of cleaning required. Thus in step 8 there is an additional file to run for cleaning address and facility name information. Future projects may want to skip the OpenRefine step and add additional cleaning steps to step 8, thus making the process slightly more parsimonious. 
+  * Seventh, at this point the dataset is for prisons in the US. This file subsets the data to California prisons only. We detail some of the issues comparing data across states in the [Wiki](https://github.com/Carceral-Ecologies/Caceral-OSHA-Data/wiki/Data-Quality).
+  * Eighth, this file systematically cleans address and facility name information so identical facilities can be identified (the names of facilities do not appear to be standardized by OSHA.) and produces the final dataset in both long and wide formats.
+  
+Within the 2_Data_Exploration_and_Analysis folder contains several files for preliminary data exploration. These files are incomplete and inprogress.
 
 ## Code of Conduct
 

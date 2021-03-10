@@ -1,0 +1,2727 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_city",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PHOENIX",
+          "Phoenix"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PHOENIX"
+      }
+    ],
+    "description": "Mass edit cells in column site_city"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_city",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ST. THOMAS",
+          "ST THOMAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ST. THOMAS"
+      }
+    ],
+    "description": "Mass edit cells in column site_city"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_city",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "E. ELMHURST",
+          "E ELMHURST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "E. ELMHURST"
+      }
+    ],
+    "description": "Mass edit cells in column site_city"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_city",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DOVER FOXCROFT",
+          "DOVER-FOXCROFT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DOVER-FOXCROFT"
+      },
+      {
+        "from": [
+          "WINSTON-SALEM",
+          "WINSTON SALEM"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "WINSTON-SALEM"
+      }
+    ],
+    "description": "Mass edit cells in column site_city"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_city",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "REPRESA",
+          "REPRESSA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "REPRESA"
+      }
+    ],
+    "description": "Mass edit cells in column site_city"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "9595 W. QUINCY AVE.",
+          "9595 W QUINCY AVE.",
+          "9595 W. QUINCY AVE",
+          "9595 W. QUINCY AVE. "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9595 W QUINCY AVE"
+      },
+      {
+        "from": [
+          "19005 WILEY'S WELL ROAD",
+          "19005 WILEY'S WELL ROAD ",
+          "19005 WILEYS WELL ROAD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "19005 WILEY'S WELL ROAD"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "14901 S CENTRAL AVE",
+          "14901 CENTRAL AVE S.",
+          "14901 S. CENTRAL AVE",
+          "14901 S. CENTRAL AVE."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "14901 S CENTRAL AVE"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALLE CESAR GONZALEZ ESQ CALAF",
+          "CALLE CESAR GONZALEZ ESQ CALLE CALAF",
+          "CALLE CALAF ESQ CESAR GONZALEZ"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CESAR GONZALEZ ESQ CALLE CALAF"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1225 \"M\" STREET",
+          "1225 M STREET",
+          "1225 M. STREET"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1225 M STREET"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "44750 60TH ST. WEST",
+          "44750 60TH ST WEST",
+          "44750  60TH ST. WEST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "44750 60TH ST WEST"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "900 QUEBEC AVE",
+          "900 QUEBEC AVE.",
+          " 900 QUEBEC AVE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "900 QUEBEC AVE"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "14901 CENTRAL AVE",
+          "14901 CENTRAL AVE ",
+          "14901 CENTRAL AVE."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "14901 CENTRAL AVE"
+      },
+      {
+        "from": [
+          "5325 BRODER BLVD",
+          "5325 BRODER BLVD. ",
+          "5325 BRODER BLVD."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5325 BRODER BLVD"
+      },
+      {
+        "from": [
+          "2100 PEABODY RD",
+          "2100 PEABODY RD."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2100 PEABODY RD"
+      },
+      {
+        "from": [
+          "300 PRISON RD",
+          "300 PRISON RD."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "300 PRISON RD"
+      },
+      {
+        "from": [
+          "24900 HIGHWAY 202",
+          "24900 HIGHWAY 202 "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "24900 HWY 202"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "16756 CHINO-CORONA RD. ",
+          "16756 CHINO-CORONA RD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "16756 CHINO-CORONA RD "
+      },
+      {
+        "from": [
+          "741-925 HERLONG ACCESS ROAD A-25",
+          "741-925 HERLONG ACCESS ROAD, A-25"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "741-925 HERLONG ACCESS ROAD A-25"
+      },
+      {
+        "from": [
+          "31625 HWY 101",
+          "31625 HWY. 101"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "31625 HWY 101"
+      },
+      {
+        "from": [
+          "3820 E MAIN ST",
+          "3820 E. MAIN ST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "3820 E MAIN ST"
+      },
+      {
+        "from": [
+          "600 WAIALE RD",
+          "600 WAIALE RD."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "600 WAIALE RD"
+      },
+      {
+        "from": [
+          "19025 WILEY'S WELL ROAD",
+          "19025 WILEYS WELL ROAD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "19025 WILEY'S WELL RD"
+      },
+      {
+        "from": [
+          "19005 WILEY'S WELL RD. ",
+          "19005 WILEYS WELL RD."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "19005 WILEY'S WELL RD "
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "2700 S. CALIFORNIA AVE.",
+          "2700 S CALIFORNIA AVE."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2700 S CALIFORNIA AVE"
+      },
+      {
+        "from": [
+          "7018 BLAIR RD",
+          "7018 BLAIR RD "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7018 BLAIR RD"
+      },
+      {
+        "from": [
+          "2302 BROWN RD",
+          "2302 BROWN RD "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2302 BROWN RD"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "18-18 HAZEN ST,",
+          "18-18 HAZEN ST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "18-18 HAZEN ST"
+      },
+      {
+        "from": [
+          "5701 8TH STREET - CAMP PARKS",
+          "5701 8TH STREET, CAMP PARKS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5701 8TH STREET CAMP PARKS"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "9036 E M-36",
+          "9036 E M36"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9036 E M-36"
+      },
+      {
+        "from": [
+          "100 MAIN ST",
+          "100 MAIN ST."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "100 MAIN ST"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "150 N HAMILTON STREET",
+          "150 N. HAMILTON STREET"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "150 N HAMILTON STREET"
+      },
+      {
+        "from": [
+          "AVE. MIRAMAR #601",
+          "AVE. MIRAMAR 601"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVE MIRAMAR 601"
+      },
+      {
+        "from": [
+          "1000 AIRBASE ROAD",
+          "1000 AIRBASE ROAD "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1000 AIRBASE ROAD"
+      },
+      {
+        "from": [
+          "8500 DONIPHAN RD.",
+          "8500 DONIPHAN RD. "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "8500 DONIPHAN RD"
+      },
+      {
+        "from": [
+          "4001 KING AVE",
+          "4001 KING AVE."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "4001 KING AVE"
+      },
+      {
+        "from": [
+          "75-20 ASTORIA BLVD",
+          "75-20 ASTORIA BLVD. "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "75-20 ASTORIA BLVD"
+      },
+      {
+        "from": [
+          "135 STATE ST.",
+          "135 STATE ST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "135 STATE ST"
+      },
+      {
+        "from": [
+          "23500 KASSON RD",
+          "23500 KASSON RD."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "23500 KASSON RD"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "475-750 RICE CANYON RD",
+          "475-750 RICE CANYON RD."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "475-750 RICE CANYON RD"
+      },
+      {
+        "from": [
+          "CARR 466 BO GUERRERO",
+          "CARR 466 BO. GUERRERO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARR 466 BO GUERRERO"
+      },
+      {
+        "from": [
+          "1034 BRAGG ST",
+          "1034 BRAGG ST."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1034 BRAGG ST"
+      },
+      {
+        "from": [
+          "126-02  82ND AVE",
+          "126-02 82ND AVE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "126-02 82ND AVE"
+      },
+      {
+        "from": [
+          "2737 W. CECIL AVE.",
+          "2737 W CECIL AVE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "2737 W CECIL AVE"
+      },
+      {
+        "from": [
+          "33 NE 4TH ST",
+          "33 NE 4TH ST."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "33 NE 4TH ST"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "1156 ROUTE 374 (COOK ST.)",
+          "1156 ROUTE 374 COOK ST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1156 ROUTE 374 COOK ST"
+      },
+      {
+        "from": [
+          "AVE. CENTRAL JUANITA FINAL",
+          "AVE CENTRAL JUANITA FINAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "AVE CENTRAL JUANITA FINAL"
+      },
+      {
+        "from": [
+          "7410 S. MACARTHUR BLVD.",
+          "7410 S MACARTHUR BLVD. "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7410 S MACARTHUR BLVD"
+      },
+      {
+        "from": [
+          "1515 HAZEN STREET",
+          "15-15 HAZEN STREET"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "15-15 HAZEN STREET"
+      },
+      {
+        "from": [
+          "1 KINGS WAY",
+          "#1 KINGS WAY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1 KINGS WAY"
+      },
+      {
+        "from": [
+          "17808 STATE HIGHWAY 100 W.",
+          "17808 STATE HIGHWAY 100 W"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "17808 STATE HIGHWAY 100 W"
+      },
+      {
+        "from": [
+          "5500 SNYDER AVE.",
+          "5500 SNYDER AVE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "5500 SNYDER AVE"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "24863 W. JAYNE AVE.",
+          "24863 W JAYNE AVE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "24863 W JAYNE AVE"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "36560 NY 12-E ",
+          "36560 NY 12E"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "36560 NY 12-E "
+      },
+      {
+        "from": [
+          "501 CAPITAL CIRCLE, NE",
+          "501 CAPITAL CIRCLE NE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "501 CAPITAL CIRCLE NE"
+      },
+      {
+        "from": [
+          "1777 ATLANTA AVENUE SUITE #G3",
+          "1777 ATLANTA AVENUE SUITE G-3"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "1777 ATLANTA AVENUE SUITE G3"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CARR # 2 BO. ESPINOSA",
+          "CARR. # 2 BO. ESPINOSA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARR 2 BO ESPINOSA"
+      },
+      {
+        "from": [
+          "CALLE VICTORIA # 354",
+          "CALLE VICTORIA #354"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALLE VICTORIA 354"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CARRETERA 2 SECTOR LAS CUCHARAS",
+          "CARRETERA 2 SECTOR LAS CUCHARAS "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARRETERA 2 SECTOR LAS CUCHARAS"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "site_address",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "BO. EL TUQUE SECTOR LAS CUCHARAS CARR 2",
+          "BO EL TUQUE SECTOR LAS CUCHARAS CARR 2",
+          "BO. EL TUQUE SECTOR LAS CUCHARAS CARR # 2",
+          "CARR 2 BO EL TUQUE SECTOR LAS CUCHARAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BO EL TUQUE SECTOR LAS CUCHARAS CARR 2"
+      },
+      {
+        "from": [
+          "CARR # 2 SECTOR LAS CUCHARAS ",
+          "SECTOR LAS CUCHARAS CARR #2",
+          "CARR 2 SECTOR LAS CUCHARAS",
+          "SECTOR LAS CUCHARAS CARR 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARR 2 SECTOR LAS CUCHARAS "
+      },
+      {
+        "from": [
+          "CARR 446 BO GUERRERO",
+          "BO. GUERRERO CARR 446",
+          "CARR 446 BO. GUERRERO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARR 446 BO GUERRERO"
+      },
+      {
+        "from": [
+          "PR 2 BO EL TUQUE SECTOR CUCHARAS",
+          "PR 2 BO. EL TUQUE SECTOR CUCHARAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PR 2 BO EL TUQUE SECTOR CUCHARAS"
+      },
+      {
+        "from": [
+          "CARRETERA #2 EL TUQUE SECTOR CUCHARAS",
+          "CARRETERA 2 EL TUQUE SECTOR CUCHARAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARRETERA 2 EL TUQUE SECTOR CUCHARAS"
+      },
+      {
+        "from": [
+          "BO EL TUQUE CARRETERA #2 SECTOR LAS CUCHARAS ",
+          "BO EL TUQUE SECTOR LAS CUCHARAS, CARRETERA 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BO EL TUQUE CARRETERA 2 SECTOR LAS CUCHARAS "
+      },
+      {
+        "from": [
+          "BO LIMON CARR #105 KM 0.9",
+          "CARR 105 KM 0.9 BO LIMON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BO LIMON CARR 105 KM 0.9"
+      },
+      {
+        "from": [
+          "CARR 2 SEC EL TUQUE LAS CUCHARAS",
+          "SEC LAS CUCHARAS EL TUQUE CARR  2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARR 2 SEC EL TUQUE LAS CUCHARAS"
+      },
+      {
+        "from": [
+          "BO EL TUQUE SECTOR LAS CUCHARAS",
+          "BO. EL TUQUE SECTOR LAS CUCHARAS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BO EL TUQUE SECTOR LAS CUCHARAS"
+      },
+      {
+        "from": [
+          "CARR 639 SECTOR JOBALES BO SABANA HOYOS",
+          "CARR 639 SECTOR JOBALES BO. SABANA HOYOS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARR 639 SECTOR JOBALES BO SABANA HOYOS"
+      },
+      {
+        "from": [
+          "CARRETERA #2 EL TUQUE SECTOR LAS CUCHARAS",
+          "CARRETERA 2 SECTOR LAS CUCHARAS EL TUQUE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CARRETERA 2 EL TUQUE SECTOR LAS CUCHARAS"
+      }
+    ],
+    "description": "Mass edit cells in column site_address"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CORRECTIONAL HEALTH SERVICES CORP",
+          "CORRECTIONAL HEALTH SERVICES CORP.",
+          "CORRECTIONAL HEALTH SERVICES, CORP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CORRECTIONAL HEALTH SERVICES CORP"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NC DOC - CORRECTIONAL INSTITUTION FOR WOMEN",
+          "NC DOC- CORRECTIONAL INSTITUTION FOR WOMEN",
+          "NC DOC CORRECTIONAL INSTITUTION FOR WOMEN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NC DOC CORRECTIONAL INSTITUTION FOR WOMEN"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MD DEPT  OF PUBLIC SAFETY   CORRECTIONAL SERVICES",
+          "MD DEPT OF PUBLIC SAFETY & CORRECTIONAL SERVICES",
+          "MD DEPT. OF PUBLIC SAFETY & CORRECTIONAL SERVICES"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MD DEPT OF PUBLIC SAFETY  & CORRECTIONAL SERVICES"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "U.S. DEPARTMENT OF JUSTICE",
+          "U.S. DEPARTMENT OF JUSTICE ",
+          "US DEPARTMENT OF JUSTICE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S. DEPARTMENT OF JUSTICE"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "THE GEO GROUP, INC.",
+          "THE GEO GROUP INC.",
+          "THE GEO GROUP, INC. "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "THE GEO GROUP, INC."
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "U.S. DEPARTMENT OF JUSTICE - FEDERAL BUREAU OF PRISONS",
+          "U.S. DEPARTMENT OF JUSTICE FEDERAL BUREAU OF PRISONS",
+          "U.S. DEPARTMENT OF JUSTICE, FEDERAL BUREAU OF PRISONS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S. DEPARTMENT OF JUSTICE FEDERAL BUREAU OF PRISONS"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS - CORCORAN",
+          "CA CORRECTIONS CORCORAN",
+          "CA CORRECTIONS CORCORAN "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS CORCORAN"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS - AVENAL",
+          "CA CORRECTIONS AVENAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS AVENAL"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MERCED COUNTY",
+          "MERCED COUNTY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MERCED COUNTY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DEPARTAMENTO DE CORRECCION Y REHABILITACION",
+          "DEPARTAMENTO DE CORRECCION Y REHABILITACION "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEPARTAMENTO DE CORRECCION Y REHABILITACION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NYCDOC ERIC M TAYLOR CENTER",
+          "NYCDOC ERIC M. TAYLOR CENTER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYCDOC ERIC M TAYLOR CENTER"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "STATE OF OREGON YOUTH OFFENDERS - OYA",
+          "STATE OF OREGON YOUTH OFFENDERS OYA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STATE OF OREGON YOUTH OFFENDERS OYA"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SCOTT COUNTY SHERIFF'S OFFICE",
+          "SCOTT COUNTY SHERIFFS OFFICE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SCOTT COUNTY SHERIFFS OFFICE"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ALAMEDA COUNTY SHERIFF'S OFFICE - SANTA RITA JAIL",
+          "ALAMEDA COUNTY SHERIFF'S OFFICE, SANTA RITA JAIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ALAMEDA COUNTY SHERIFF'S OFFICE SANTA RITA JAIL"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "U.S. DEPT OF JUSTICE FEDERAL BUREAU OF PRISONS",
+          "US DEPT OF JUSTICE FEDERAL BUREAU OF PRISONS",
+          "U.S. DEPT OF JUSTICE - FEDERAL BUREAU OF PRISONS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S. DEPT OF JUSTICE FEDERAL BUREAU OF PRISONS"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ATLANTA USP",
+          "USP ATLANTA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ATLANTA USP"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA PRISON INDUSTRY AUTHORITY",
+          "CA PRISON INDUSTRY AUTHORITY ",
+          "CA. PRISON INDUSTRY AUTHORITY",
+          "CA PRISON AUTHORITY INDUSTRY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA PRISON INDUSTRY AUTHORITY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DCR PONCE PRINCIPAL",
+          "DCR PONCE PRINCIPAL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DCR PONCE PRINCIPAL"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "INDIANA WOMEN'S PRISON",
+          "INDIANA WOMENS PRISON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "INDIANA WOMEN'S PRISON"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALIFORNIA DEPT. OF CORRECTIONS AND REHABILITATION",
+          "CALIFORNIA DEPT OF CORRECTIONS AND REHABILITATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALIFORNIA DEPT. OF CORRECTIONS AND REHABILITATION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FEDERAL CORRECTIONAL INSTITUTION LA TUNA ",
+          "FEDERAL CORRECTIONAL INSTITUTION - LA TUNA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FEDERAL CORRECTIONAL INSTITUTION LA TUNA "
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS - DEUEL VOCATIONAL INSTITUTE",
+          "CA CORRECTIONS, DEUEL VOCATIONAL INSTITUTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS DEUEL VOCATIONAL INSTITUTE"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "STATE OF OREGON YOUTH AUTHORITY",
+          "STATE OF OREGON - OREGON YOUTH AUTHORITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STATE OF OREGON YOUTH AUTHORITY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS PLEASANT VALLEY STATE PRISON",
+          "CA CORRECTIONS - PLEASANT VALLEY STATE PRISON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS PLEASANT VALLEY STATE PRISON"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA DEPT OF CORRECTIONS",
+          "CA DEPT. OF CORRECTIONS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA DEPT OF CORRECTIONS"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALIFORNIA DEPARTMENT OF CORRECTIONS AND REHABILITATION",
+          "CALIFORNIA DEPARTMENT OF  CORRECTIONS AND REHABILITATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALIFORNIA DEPARTMENT OF CORRECTIONS AND REHABILITATION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA DEPT OF CORRECTIONS SAN QUENTIN",
+          "CA DEPT. OF CORRECTIONS SAN QUENTIN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA DEPT OF CORRECTIONS SAN QUENTIN"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CORRECTIONS, DEPARTMENT OF",
+          "DEPARTMENT OF CORRECTIONS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEPARTMENT OF CORRECTIONS"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DCR",
+          "DCR "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DCR"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS AND REHABILITATION",
+          "CA- CORRECTIONS AND REHABILITATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS AND REHABILITATION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NYCBOC",
+          "NYCBOC  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYCBOC"
+      },
+      {
+        "from": [
+          "U.S. DEPT OF JUSTICE",
+          "US DEPT OF JUSTICE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S. DEPT OF JUSTICE"
+      },
+      {
+        "from": [
+          "DCR INSTITUCION FASE I",
+          "DCR INSTITUCION FASE I "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DCR INSTITUCION FASE I"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS - FOLSOM STATE PRISON",
+          "CA CORRECTIONS FOLSOM STATE PRISON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS FOLSOM STATE PRISON"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DEPARTAMENTO DE CORRECION Y REHABILITACION",
+          "DEPARTAMENTO DE CORRECION Y REHABILITACION "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEPARTAMENTO DE CORRECION Y REHABILITACION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS & REHABILITATION",
+          "CA CORRECTIONS & REHABILITATION "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS AND REHABILITATION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "STATE OF CA.,DEPT OF MENTAL HEALTH",
+          "STATE OF CA.,DEPT. OF MENTAL HEALTH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STATE OF CA DEPT OF MENTAL HEALTH"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS - CORCORAN SATF",
+          "CA CORRECTIONS CORCORAN SATF"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS CORCORAN SATF"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS & REHABILITATION CALIFORNIA MEN'S COLONY",
+          "CA CORRECTIONS & REHABILITATION, CALIFORNIA MEN'S COLONY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS AND REHABILITATION CALIFORNIA MEN'S COLONY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "STATE OF CALIFORNIA DEPARTMENT OF CORRECTIONS AND REHABILITATION",
+          "STATE OF CALIFORNIA, DEPARTMENT OF CORRECTIONS AND REHABILITATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STATE OF CALIFORNIA DEPARTMENT OF CORRECTIONS AND REHABILITATION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CORRECTIONS DEPT OF",
+          "DEPT OF CORRECTIONS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEPT OF CORRECTIONS"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ADM CORRECCION",
+          "ADM. CORRECCION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ADM CORRECCION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA DEPT OF CORRECTIONS & REHABILITATION",
+          "CA DEPT. OF CORRECTIONS & REHABILITATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA DEPT OF CORRECTIONS AND REHABILITATION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA DEPT OF CORRECTIONS AND REHABILITATION",
+          "CA DEPT. OF CORRECTIONS AND REHABILITATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA DEPT OF CORRECTIONS AND REHABILITATION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALIFORNIA PRISON INDUSTRY AUTHORITY",
+          " CALIFORNIA PRISON INDUSTRY AUTHORITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALIFORNIA PRISON INDUSTRY AUTHORITY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NYCDOC - RIKERS ISLAND - RNDC",
+          "NYCDOC RIKERS ISLAND RNDC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYCDOC RIKERS ISLAND RNDC"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MI DOC WOMENS HURON VALLEY CORRECTIONAL FACILITY",
+          "MI DOC WOMEN'S HURON VALLEY CORRECTIONAL FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MI DOC WOMEN'S HURON VALLEY CORRECTIONAL FACILITY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS - DEUEL VOCATIONAL INSTITUTION",
+          "CA CORRECTIONS, DEUEL VOCATIONAL INSTITUTION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS DEUEL VOCATIONAL INSTITUTION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "U.S. DEPARTMENT OF JUSTICE, FEDERAL BUREAU OF PRISONS - FCI OXFORD",
+          "U.S. DEPARTMENT OF JUSTICE, FEDERAL BUREAU OF PRISONS, FCI OXFORD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S. DEPARTMENT OF JUSTICE FEDERAL BUREAU OF PRISONS FCI OXFORD"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FEDERAL BUREAU OF PRISONS",
+          "FEDERAL BUREAU OF PRISONS "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FEDERAL BUREAU OF PRISONS"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "STATE OF CALIFORNIA, DEPARTMENT OF CORRECTIONS AND REHABILITATION, CALIFORNIA INSTITUTE FOR MEN",
+          "STATE OF CALIFORNIA DEPARTMENT OF CORRECTIONS AND REHABILITATION, CALIFORNIA INSTITUTE FOR MEN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "STATE OF CALIFORNIA DEPARTMENT OF CORRECTIONS AND REHABILITATION CALIFORNIA INSTITUTE FOR MEN"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS CORCORAN",
+          "CA CORRECTIONS-CORCORAN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS CORCORAN"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS AND REHABILITATION - HIGH DESERT STATE PRISON ",
+          "CA CORRECTIONS AND REHABILITATION-HIGH DESERT STATE PRISON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS AND REHABILITATION HIGH DESERT STATE PRISON "
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "U.S. DEPT OF JUSTICE",
+          "U. S. DEPT OF JUSTICE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S. DEPT OF JUSTICE"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PINAL COUNTY SHERIFF'S OFFICE, ADULT DETENTION CEN",
+          "PINAL COUNTY SHERIFF'S OFFICE, ADULT DETENTION CENTER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PINAL COUNTY SHERIFF'S OFFICE ADULT DETENTION CENTER"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS-TEHACHAPI",
+          "CA CORRECTIONS - TEHACHAPI"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS TEHACHAPI"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS DEUEL VOCATIONAL INSTITUTION",
+          "CA CORRECTIONS-DEUEL VOCATIONAL INSTITUTION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS DEUEL VOCATIONAL INSTITUTION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "U.S. DEPT. OF JUSTICE-FEDERAL BUREAU OF PRISONS-FEDERAL CORRECTIONAL INSTITUTION",
+          "U.S. DEPT OF JUSTICE FEDERAL BUREAU OF PRISONS, FEDERAL CORRECTIONAL INSTITUTION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S. DEPT. OF JUSTICE FEDERAL BUREAU OF PRISONS FEDERAL CORRECTIONAL INSTITUTION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FEDERAL BUREAU OF PRISONS FCI-DANBURY",
+          "FEDERAL BUREAU OF PRISONS FCI - DANBURY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FEDERAL BUREAU OF PRISONS FCI DANBURY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CITY OF AVONDALE POLICE JAIL SUBSTATION",
+          "CITY OF AVONDALE, POLICE JAIL/SUBSTATION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CITY OF AVONDALE POLICE JAIL SUBSTATION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NJDOC-SOUTHWOODS STATE PRISON",
+          "NJDOC SOUTH WOODS STATE PRISON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NJDOC SOUTHWOODS STATE PRISON"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "USDOJ/FBOP FEDERAL MEDICAL CENTER DEVENS",
+          "US DOJ/FBOP FEDERAL MEDICAL CENTER DEVENS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "USDOJ FBOP FEDERAL MEDICAL CENTER DEVENS"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS JUVENILE JUSTICE-SO RECEPTION",
+          "CA CORRECTIONS JUVENILE JUSTICE - SO RECEPTION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS JUVENILE JUSTICE SO RECEPTION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS AND REHABILITATION",
+          "CA.CORRECTIONS AND REHABILITATIONS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS AND REHABILITATION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NYCDJJ BRIDGES JUVENILE CENTER",
+          "NYC DJJ BRIDGES JUVENILE CENTER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYCDJJ BRIDGES JUVENILE CENTER"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "U.S. DEPARTMENT OF JUSTICE FEDERAL BUREAU OF PRISONS",
+          "U.S. DEPARTMENT OF JUSTICE-FEDERAL BUREAU OF PRISONS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S. DEPARTMENT OF JUSTICE FEDERAL BUREAU OF PRISONS"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ADM.CORRECCION-INST.CORRECCIONAL GUERRERO",
+          "ADM. CORRECCION -INST.CORRECCIONAL GUERRERRO"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ADM CORRECCION INST CORRECCIONAL GUERRERO"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CALIFORNIA HEALTH CARE FACILITY",
+          "CA CALIFORNIA HEALTH CARE FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CALIFORNIA HEALTH CARE FACILITY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ST OF NV-DEPT OF CORRECTIONS-LOVELOCK CORRECTIONAL",
+          "ST OF NV-DEPT.OF CORRECTIONS LOVELOCK CORRECTIONAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ST OF NV DEPT OF CORRECTIONS LOVELOCK CORRECTIONAL"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "U.S BUREAU OF PRISONS - TERRE HAUTE",
+          "U.S. BUREAU OF PRISONS-TERRE HAUTE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S BUREAU OF PRISONS TERRE HAUTE"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column estab_name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column estab_name using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DCR",
+          "DC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DCR"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NYSDOCS WATERTOWN CORRECTIONAL FACILITY",
+          "NYSDOCCS WATERTOWN CORRECTIONAL FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYSDOCS WATERTOWN CORRECTIONAL FACILITY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NYSDOCCS EASTERN NY CORR FAC",
+          "NYSDOCCS EASTERN CORR FAC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYSDOCCS EASTERN NY CORR FAC"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MARICOPA COUNTY SHERIFFS OFFIC",
+          "MARICOPA COUNTY SHERIFFS OFFICE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MARICOPA COUNTY SHERIFFS OFFICE"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NYSDOCCS AUBURN CORRECTIONAL FACILITY",
+          "NYSDOCS AUBURN CORRECTIONAL FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYSDOCCS AUBURN CORRECTIONAL FACILITY"
+      },
+      {
+        "from": [
+          "NYSDOCCS CAPE VINCENT CORRECTIONAL FACILITY",
+          "NYSDOCS CAPE VINCENT CORRECTIONAL FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYSDOCCS CAPE VINCENT CORRECTIONAL FACILITY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS JUVENILE JUSTICE SO RECEPTION",
+          "CA CORRECTIONS JUVNILE JUSTICE - SO RECEPTION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS JUVENILE JUSTICE SO RECEPTION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DEPARTAMENTO DE CORRECCION Y REHABILITACION",
+          "DEPARTAMENTO DE CORRECION Y REHABILITACION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DEPARTAMENTO DE CORRECCION Y REHABILITACION"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS & REHABILITATION - CHUCHAWALLA VALLEY STATE PRISON",
+          "CA CORRECTIONS & REHABILITATION-CHUCKAWALLA VALLEY STATE PRISON"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS AND REHABILITATION CHUCHAWALLA VALLEY STATE PRISON"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA CORRECTIONS CORCORAN",
+          "CA CORRECTIONS - CORCORAN 2"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA CORRECTIONS CORCORAN"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "NYSDOCCS ALBION CORRECTIONAL FACILITY",
+          "NYSDOCS ALBION CORRECTIONAL FACILITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYSDOCCS ALBION CORRECTIONAL FACILITY"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "DCR INSTITUCION FASE I",
+          "DCR- INSTITUCION FASE 1"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DCR INSTITUCION FASE I"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "WYOMING HONOR CONSERVATION CAMP #087",
+          "WYOMING HONOR CONSERVATION CAMP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "WYOMING HONOR CONSERVATION CAMP #087"
+      },
+      {
+        "from": [
+          "NYSDOCCS DOWNSTATE CORR FAC",
+          "NYSDOCS DOWNSTATE CORR FAC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYSDOCCS DOWNSTATE CORR FAC"
+      },
+      {
+        "from": [
+          "NYSDOCCS CLINTON CORR FAC",
+          "NYSDOCS CLINTON CORR FAC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NYSDOCCS CLINTON CORR FAC"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "estab_name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CA DEPT OF CORRECTIONS - CHCF",
+          "CA DEPT OF CORRECTIONS - HCF"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CA DEPT OF CORRECTIONS CHCF"
+      }
+    ],
+    "description": "Mass edit cells in column estab_name"
+  }
+]

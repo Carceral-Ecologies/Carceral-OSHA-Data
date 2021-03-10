@@ -2,7 +2,7 @@
 # We already did a pass through using Openrefine. This script will further clean facility and addresses by removing special characters and other criteria. See Github issue #11. 
 
 #### Load in Data ####
-ca_viol = read.csv(file = "Cleaned_Data/CA_prison_insp_viol_2010_op.csv", header = TRUE, stringsAsFactors = FALSE)
+ca_viol = read.csv(file = "1_Data_Creation_Cleaning/Cleaned_Data/CA_prison_insp_viol_2010_op.csv", header = TRUE, stringsAsFactors = FALSE)
 
 
 #### Cleaning Facility Names ####
@@ -42,10 +42,7 @@ ca_viol$estab_name = gsub("CA CORRECTIONS PIA", "CA CORRECTIONS", ca_viol$estab_
 ca_viol$estab_name = gsub("CA PRISON INDUSTRY AUTHORITY", "CA CORRECTIONS", ca_viol$estab_name)
 ca_viol$estab_name = gsub("PRISON INDUSTRY AUTHORITY", "CA CORRECTIONS", ca_viol$estab_name)
 
-# EVEN IF THIS WORKS STILL NEED TO DEAL WITH MERCED COUNTY, US DEPT OF JUSTICE FEDERAL ETC. PRISON INDUSTRY AUTHORITY
-# check CA CORRECTIONS DIVISION OF ADULT PAROLE OPERATIONS - two different cities
-# I need a way to identify "CA CORRECTIONS" only now and add city name at the end. 
-
+# trim whitespace
 trimws(ca_viol$estab_name, which = c("both"))
 
 # Append city name onto facilities with generic name of CA Corrections 
@@ -80,7 +77,7 @@ trimws(ca_viol$site_address, which = c("both"))
 
 #### Export Long Data ####
 # If you feel like it. Not fully cleaned yet. This is here as a record that we did export this data for some preliminary analysis.
-# write.csv(ca_viol, 'Cleaned_Data/CA_prison_insp_viol_2010_op_fac.csv')
+# write.csv(ca_viol, '1_Data_Creation_Cleaning/Cleaned_Data/Files_for_facility_name_cleaning/CA_prison_insp_viol_2010_op_fac.csv')
 
 #### Convert to Wide Format by Facility Name ####
 
@@ -104,7 +101,7 @@ row.names(ca_violw) <- 1:nrow(ca_violw)
 #### Export Wide Data ####
 # Exporting the data in wide format is needed to do the cleaning in the next step. Remove the # below to export the wide data pre-cleaning. There is also code below to export the wide data post-cleaning.
 
-# write.csv(ca_violw, file = "Cleaned_data/CA_prison_insp_viol_2010_op_fac_wide.csv", row.names = FALSE)
+# write.csv(ca_violw, file = "1_Data_Creation_Cleaning/Cleaned_Data/Files_for_facility_name_cleaning/CA_prison_insp_viol_2010_op_fac_wide.csv", row.names = FALSE)
 
 #### Manual Cleaning of Facility Names ####
 # After converting the data to wide format I found the following corrections needed to be made. 
@@ -256,11 +253,11 @@ row.names(ca_violw) <- 1:nrow(ca_violw)
 #### Export Wide Data ####
 # Exporting the data in wide format to verify cleaning
 
-write.csv(ca_violw, file = "Cleaned_data/CA_prison_insp_viol_2010_op_fac_wide.csv", row.names = FALSE)
+write.csv(ca_violw, file = "1_Data_Creation_Cleaning/Cleaned_Data/CA_prison_insp_viol_2010_op_fac_wide.csv", row.names = FALSE)
 
 #### Export Long Data ####
 
-write.csv(ca_viol, file = "Cleaned_data/CA_OSHA_prison_insp_viol_2010_2019_cleaned_long.csv", row.names = FALSE)
+write.csv(ca_viol, file = "1_Data_Creation_Cleaning/Cleaned_Data/CA_prison_insp_viol_2010_op_fac_long.csv", row.names = FALSE)
 
 
 
