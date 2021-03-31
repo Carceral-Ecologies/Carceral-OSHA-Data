@@ -1,6 +1,9 @@
 #### Purpose ####
 # This code merges all of the OSHA datasets 
 
+#### Load in Packages ####
+library("tidyverse")
+
 #### Load in Insepctions ####
 inspections = read.csv(file = "1_Data_Creation_Cleaning/Cleaned_Data/prison_inspections_2010.csv", header = TRUE, stringsAsFactors = FALSE)
 
@@ -103,10 +106,16 @@ viol_not_in_inspec = viol_and_vevent[!(viol_and_vevent$activity_nr %in% inspecti
 # inspections not in violations
 inspec_not_in_violations = inspections_ractivity[!(inspections_ractivity$activity_nr %in% viol_and_vevent$activity_nr), "activity_nr"] # 1382 inspections not in violations. This makes sense because some inspections may never have had a resulting violation.
 
+# create flag to mark no violation data
+inspections_ractivity$noviol = ifelse(inspections_ractivity$activity_nr %in% inspec_not_in_violations, TRUE, FALSE)
+
 ### Merge inspections and violations ####
 
 final = merge(inspections_ractivity, viol_and_vevent, by = "activity_nr", all.x = TRUE, row.names = FALSE)
 # All.x = assures that inspections with no matching violations entry will be included in the final dataset 
+
+#### Rearrange rows for readability ####
+final = final %>% relocate(all_of(c("activity_nr", "reporting_id", "state_flag", "estab_name", "site_address", "site_city", "site_state", "site_zip", "owner_type", "owner_code", "adv_notice", "safety_hlth", "sic_code", "naics_code", "insp_type", "insp_scope", "why_no_insp", "union_status", "nr_in_estab", "open_date", "case_mod_date", "close_conf_date", "close_case_date", "ld_dt", "close_year", "noviol", "act_id", "citation_id", "delete_flag", "standard", "viol_type", "issuance_date", "abate_date", "abate_complete", "current_penalty", "initial_penalty", "contest_date", "final_order_date", "nr_instances", "nr_exposed", "rec", "gravity", "emphasis", "hazcat", "fta_insp_nr", "fta_issuance_date", "fta_penalty", "fta_contest_date", "fta_final_order_date", "hazsub1", "hazsub2", "hazsub3", "hazsub4", "hazsub5", "load_dt", .after = "close_year")))
 
 
 #### Export the final dataset ####

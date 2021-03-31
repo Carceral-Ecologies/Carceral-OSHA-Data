@@ -261,12 +261,5 @@ write.csv(ca_viol, file = "1_Data_Creation_Cleaning/Cleaned_Data/CA_prison_insp_
 
 
 
-#### Manual Cleaning of Addresses ####
-# change address "US PENITENTIARY13777 AIR EXPRESSWAY BLVD" AND "FCI VICTORVILLE MEDIUM II13777 AIR EXPRESSWAY" to "13777 AIR EXPRESSWAY BLVD"
-# rename "14901 S CENTRAL AVE" to "14901 CENTRAL AVE"
-
-
-
-
 
 
