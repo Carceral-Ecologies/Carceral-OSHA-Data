@@ -63,6 +63,7 @@ table(prisonnot$farm)
 # Create dataset for found facilities #
 prisonnot2 = prisonnot[prisonnot[("correction")] == TRUE | prisonnot[("prison")] == TRUE | prisonnot[("jail")] == TRUE | prisonnot[("pen")] == TRUE | prisonnot[("day")] == TRUE | prisonnot[("camp")] == TRUE | prisonnot[("lock")] == TRUE | prisonnot[("jus")] == TRUE | prisonnot[("con")] == TRUE | prisonnot[("farm")] == TRUE  , ] 
 
+
 # reformating the close dates for prisonnot
 prisonnot2$close_case_date = ymd(prisonnot2$close_case_date)
 prisonnot2$close_year = year(prisonnot2$close_case_date)
@@ -71,8 +72,9 @@ table(prisonnot2$close_year)
 # Filter prisons identified by sic code to only inspections with close dates no later than 2009
 
 prisonnot2$close_case_date <- ymd(prisonnot2$close_case_date)
-newprisons <- prisonnot2 %>% mutate(year = year(close_case_date))
-newprisons2 <- newprisons %>% filter(year > 2009 | is.na(year == TRUE))
+newprisons <- prisonnot2 %>% mutate(close_year = year(close_case_date))
+newprisons2 <- newprisons %>% filter(close_year > 2009 | is.na(close_year == TRUE))
+
 
 # Drop four facilities which are not actually prisons 
 # 1. 314765041
