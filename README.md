@@ -38,7 +38,7 @@ Each script represents a stage in the data cleaning and analysis process. This s
 
 The files are organized into two main folders. 
   * First, the 1_Data_Creation_Cleaning folder contains files used to create the final dataset.
-  * Second, the 2_Data_Exploration_and_Analyis folder contains files for data analysis.
+  * Second, the 2_Data_Exploration_and_Analyis folder contains files for exploratory data analysis that are in progress.
 
 Within the 1_Data_Creation_Cleaning folder there are two additional folders Cleaned_Data and Raw_Data. The Raw_Data are converted to Cleaned_Data using the numbered rscripts in this folder. Here is order in which to run the files and brief explanation of what each file does. 
   * First, 1_OSHA_inspections loads in the OSHA inspection datasets and filters the data to include only prisons using NAICS codes, SIC codes, and establishment name information.
