@@ -72,6 +72,12 @@ For any questions on decorum please see our [Code of Conduct](https://github.com
 ### Acknowledgements 
 Thank you to Konrad Franco [(@klfranco)](https://github.com/klfranco) for his early-stage contributions to the project, for sharing his expertise, and in assisting with generating keywords for identifying carceral facilities in establishment names. 
 
+Thank you to Amay Kharbanda [@amayk13](https://github.com/amayk13) for developing code to isolate facilities in California.
+
+Thank you to Ivy Molina[@premolina492](https://github.com/premolina492) for her research which provided context for understanding the coverage of OSHA enforcement and for researching how variables in the OSHA dataset are defined.
+
+Thank you to Nathan Tran[@nathanqtran922](https://github.com/nathanqtran922) for his investigation and explortation into operationalizing toxicity and hazard using OSHA data.
+
 ## License & Copyright
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> Carceral Ecologies documentation in this repository is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See the [`LICENSE`](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/blob/master/LICENSE) file for details.
