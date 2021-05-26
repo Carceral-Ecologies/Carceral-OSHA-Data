@@ -74,9 +74,9 @@ Thank you to Konrad Franco [(@klfranco)](https://github.com/klfranco) for his ea
 
 Thank you to Amay Kharbanda [(@amayk13)](https://github.com/amayk13) for developing code to isolate facilities in California.
 
-Thank you to Ivy Molina[(@premolina492)](https://github.com/premolina492) for her research which provided context for understanding the coverage of OSHA enforcement and for researching how variables in the OSHA dataset are defined.
+Thank you to Ivy Molina [(@premolina492)](https://github.com/premolina492) for her research which provided context for understanding the coverage of OSHA enforcement and for researching how variables in the OSHA dataset are defined.
 
-Thank you to Nathan Tran[(@nathanqtran922)](https://github.com/nathanqtran922) for his investigation and explortation into operationalizing toxicity and hazard using OSHA data.
+Thank you to Nathan Tran [(@nathanqtran922)](https://github.com/nathanqtran922) for his investigation and explortation into operationalizing toxicity and hazard using OSHA data.
 
 ## License & Copyright
 
