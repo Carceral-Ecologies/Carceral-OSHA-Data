@@ -1,0 +1,37 @@
+
+{
+   "title": "Carceral-Ecology OSHA Data Extraction and Cleaning",
+   "license": "GPL-3.0", 
+   "upload_type": "software", 
+   "publication_date": "2021-05-27", 
+   "creators": [
+      {
+         "name": "Savannah Hunter",
+         "affiliation": "UC Davis",
+         "orcid": "0000-0002-9541-1800"
+      }, 
+        {
+         "name": "Jared Joseph",
+         "affiliation": "UC Davis",
+         "orcid": "0000-0003-3487-0488"
+      },
+      {
+         "name": "Lindsay Poirier",
+         "affiliation": "UC Davis",
+         "orcid": "0000-0001-9307-5834"
+      }, 
+      {
+         "name": "Nicholas Shapiro",
+         "affiliation": "UCLA",
+         "orcid": "0000-0002-4348-5525"
+      }
+   ],
+   "keywords": [
+      "carceral justice",
+      "environmental justice",
+      "occupational safety and health administration",
+      "OSHA",
+      "data creation and cleaning"
+   ],
+   "access_right": "open"
+}
