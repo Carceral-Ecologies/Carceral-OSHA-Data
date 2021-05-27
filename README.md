@@ -74,6 +74,9 @@ Thank you to Ivy Molina [(@premolina492)](https://github.com/premolina492) for h
 
 Thank you to Nathan Tran [(@nathanqtran922)](https://github.com/nathanqtran922) for his investigation and explortation into operationalizing toxicity and hazard using OSHA data.
 
+## Cite As 
+Savannah Hunter, Jared Joseph, Lindsay Poirier, & Nicholas Shapiro. (2021, May 27). Carceral-Ecology OSHA Data Extraction and Cleaning Tool (Version 0.0.2). Zenodo.[![DOI](https://zenodo.org/badge/217173617.svg)](https://zenodo.org/badge/latestdoi/217173617)
+
 ## License & Copyright
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> Carceral Ecologies documentation in this repository is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. See the [`LICENSE`](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/blob/master/LICENSE) file for details.
