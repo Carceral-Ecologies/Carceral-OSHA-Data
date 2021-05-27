@@ -1,7 +1,7 @@
 [![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/blob/master/Code%20of%20Conduct.md)
 
 # README.md
-## About
+## About - Carceral Ecology
 This repository aims to document the Carceral Ecology project, that is being developed by Professor Nicholas Shapiro, UCLA, and Professor Lindsay Poirier, UCD. 
 
 Incarcerated people are on the frontlines of environmental injustice. This systematic exposure of, at a minimum, tens of thousands of incarcerated individuals results from mass incarceration’s close ties with declining, but very much ongoing, industrialism. Often built atop the brownfields of former manufacturing facilities or mines or on the cheap land next to operating facilities, prisons serve as a “recession-proof” employer to those laid off in deindustrialization beginning in the 1970s. This project seeks to assess the environmental hazards of mass incarceration on a national scale. 
@@ -11,8 +11,15 @@ This project has three main arms:
 2. Iterative study design with stakeholders
 3. Data analysis of datasets that may cast light on the environmental conditions of prisons, jail, and detention centers. 
 
-It is the third compenent that has likely led you here. We are managing our work flow through the [issues](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/issues) function. Thats probably the best place to start contributing. 
+It is the third component that has likely led you here. We are managing our work flow through the [issues](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/issues) function. Thats probably the best place to start contributing. 
 
+## About - The OSHA Project
+
+This portion of the project is working on component three above, specifically extracting data from the Occupational Safety and Health Administration (OSHA) to cast light on conditions within prisons, jails, and other carceral facilities. This repo provides code that identifies carceral facilities within OSHA data for specific years, merges multiple OSHA data files into one dataset, provides tools for data cleaning (with a specific focus on facility name cleaning), and subsets the data by state (specifically California). The code results in a dataset of OSHA inspections and violations data for carceral facilities in California whose case was resolved after 2009. 
+
+This code may provide significant guidance for others who wish to build a similar dataset of OSHA inspections and violations. The steps here could serve as a guide for others who want to subset data to specific years or states or who want to subset data to other industries more broadly. 
+
+Additionally, we are building a [Wiki](https://github.com/Carceral-Ecologies/Carceral-OSHA-Data/wiki) which provides guidance on obtaining OSHA data, data quality issues, and a data dictionary. 
 
 ## Organization of files
 Each script represents a stage in the data cleaning or analysis process. This section details the order in which to run the files. The OSHA_Data.Rproj is the project file.
