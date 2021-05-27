@@ -1,7 +1,7 @@
 [![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/blob/master/Code%20of%20Conduct.md)
 
 # README.md
-
+## About
 This repository aims to document the Carceral Ecology project, that is being developed by Professor Nicholas Shapiro, UCLA, and Professor Lindsay Poirier, UCD. 
 
 Incarcerated people are on the frontlines of environmental injustice. This systematic exposure of, at a minimum, tens of thousands of incarcerated individuals results from mass incarceration’s close ties with declining, but very much ongoing, industrialism. Often built atop the brownfields of former manufacturing facilities or mines or on the cheap land next to operating facilities, prisons serve as a “recession-proof” employer to those laid off in deindustrialization beginning in the 1970s. This project seeks to assess the environmental hazards of mass incarceration on a national scale. 
@@ -12,6 +12,20 @@ This project has three main arms:
 3. Data analysis of datasets that may cast light on the environmental conditions of prisons, jail, and detention centers. 
 
 It is the third compenent that has likely led you here. We are managing our work flow through the [issues](https://github.com/Carceral-Ecologies/Carceral-ECHO-data/issues) function. Thats probably the best place to start contributing. 
+
+
+## Organization of files
+Each script represents a stage in the data cleaning or analysis process. This section details the order in which to run the files. The OSHA_Data.Rproj is the project file.
+
+Within the 1_Data_Creation_Cleaning folder there are two additional folders Cleaned_Data and Raw_Data. The Raw_Data are converted to Cleaned_Data using the numbered rscripts in this folder. [You can learn about how to obtain OSHA data in our wiki](https://github.com/Carceral-Ecologies/Caceral-OSHA-Data/wiki/How-to-obtain-OSHA-data). Here is order in which to run the files and brief explanation of what each file does. 
+  * First, 1_OSHA_inspections loads in the OSHA inspection datasets and filters the data to include only prisons using NAICS codes, SIC codes, and establishment name information.
+  * Second, 2_OSHA_violations loads in the violations data and then filters that data to only include prisons identified in the 1_OSHA_inspections script. 
+  * Third, 3_OSHA_related_activity does the same as step 2 but for the OSHA related activity data.
+  * Fourth, 4_OSHA_violation_event does the same as step 2 but for the violation event data.
+  * Fifth, 5_OSHA_merge_datasets merges the OSHA inspection, violations, related activity, and violation event data into one dataset. 
+  * Sixth, 6_open_refine_JSON_cleaning_code is a text document that contains JSON code designed to be run in OpenRefine to clean the city, address, and establishment name information in the final dataset. While OpenRefine is very helpful ultimately this step could not accomplish the level of cleaning required. Thus in step 8 there is an additional file to run for cleaning address and facility name information. Future projects may want to skip the OpenRefine step and add additional cleaning steps to step 8, thus making the process slightly more parsimonious. 
+  * Seventh, at this point the dataset is for prisons in the US. This file subsets the data to California prisons only. We detail some of the issues comparing data across states in the [Wiki](https://github.com/Carceral-Ecologies/Caceral-OSHA-Data/wiki/Data-Quality).
+  * Eighth, this file systematically cleans address and facility name information so identical facilities can be identified (the names of facilities do not appear to be standardized by OSHA.) and produces the final dataset in both long and wide formats.
 
 ## How to Contribute
 
@@ -32,19 +46,6 @@ It is the third compenent that has likely led you here. We are managing our work
   * Test your code locally before issuing a pull request (not sure how to do this? [here's how](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)).
   * Clearly state the purpose of your change in the description field for each commit.
   * After your first pull request is approved, please add yourself to the contributors list in the README as is appropriate.
-
-## Organization of files
-Each script represents a stage in the data cleaning or analysis process. This section details the order in which to run the files. The OSHA_Data.Rproj is the project file.
-
-Within the 1_Data_Creation_Cleaning folder there are two additional folders Cleaned_Data and Raw_Data. The Raw_Data are converted to Cleaned_Data using the numbered rscripts in this folder. [You can learn about how to obtain OSHA data in our wiki](https://github.com/Carceral-Ecologies/Caceral-OSHA-Data/wiki/How-to-obtain-OSHA-data). Here is order in which to run the files and brief explanation of what each file does. 
-  * First, 1_OSHA_inspections loads in the OSHA inspection datasets and filters the data to include only prisons using NAICS codes, SIC codes, and establishment name information.
-  * Second, 2_OSHA_violations loads in the violations data and then filters that data to only include prisons identified in the 1_OSHA_inspections script. 
-  * Third, 3_OSHA_related_activity does the same as step 2 but for the OSHA related activity data.
-  * Fourth, 4_OSHA_violation_event does the same as step 2 but for the violation event data.
-  * Fifth, 5_OSHA_merge_datasets merges the OSHA inspection, violations, related activity, and violation event data into one dataset. 
-  * Sixth, 6_open_refine_JSON_cleaning_code is a text document that contains JSON code designed to be run in OpenRefine to clean the city, address, and establishment name information in the final dataset. While OpenRefine is very helpful ultimately this step could not accomplish the level of cleaning required. Thus in step 8 there is an additional file to run for cleaning address and facility name information. Future projects may want to skip the OpenRefine step and add additional cleaning steps to step 8, thus making the process slightly more parsimonious. 
-  * Seventh, at this point the dataset is for prisons in the US. This file subsets the data to California prisons only. We detail some of the issues comparing data across states in the [Wiki](https://github.com/Carceral-Ecologies/Caceral-OSHA-Data/wiki/Data-Quality).
-  * Eighth, this file systematically cleans address and facility name information so identical facilities can be identified (the names of facilities do not appear to be standardized by OSHA.) and produces the final dataset in both long and wide formats.
 
 ## Code of Conduct
 
